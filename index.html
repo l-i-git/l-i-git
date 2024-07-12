@@ -111,21 +111,23 @@
                 </ul>
             </div>
             
-            <div class="category" id="code">
-                <h2 id="codeTitle">代码</h2>
+            <div class="category" id="development">
+                <h2 id="developmentTitle">开发</h2>
                 <ul>
                     <li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></li>
                     <li><a href="https://deepseek.ai/" target="_blank">DeepSeek</a></li>
-                </ul>
-            </div>
-            
-            <div class="category" id="framework">
-                <h2 id="frameworkTitle">框架</h2>
-                <ul>
                     <li><a href="https://github.com/geekan/MetaGPT" target="_blank">MetaGPT</a></li>
                     <li><a href="https://www.coze.com/" target="_blank">Coze</a></li>
                     <li><a href="https://huggingface.co/" target="_blank">HuggingFace</a></li>
                     <li><a href="https://openai.com/blog/introducing-gpts" target="_blank">GPTS</a></li>
+                </ul>
+            </div>
+            
+            <div class="category" id="ppt">
+                <h2 id="pptTitle">PPT</h2>
+                <ul>
+                    <li><a href="https://gamma.app/" target="_blank">Gamma</a></li>
+                    <li><a href="https://www.beautiful.ai/" target="_blank">Beautiful.ai</a></li>
                 </ul>
             </div>
         </div>
@@ -139,8 +141,8 @@
                 imageTitle: "图像",
                 audioTitle: "音乐",
                 videoTitle: "视频",
-                codeTitle: "代码",
-                frameworkTitle: "框架"
+                developmentTitle: "开发",
+                pptTitle: "PPT"
             },
             en: {
                 mainTitle: "AI Tools Navigation",
@@ -148,8 +150,8 @@
                 imageTitle: "Image",
                 audioTitle: "Audio",
                 videoTitle: "Video",
-                codeTitle: "Code",
-                frameworkTitle: "Framework"
+                developmentTitle: "Development",
+                pptTitle: "Presentation"
             }
         };
 
@@ -159,8 +161,8 @@
             document.getElementById('imageTitle').textContent = translations[lang].imageTitle;
             document.getElementById('audioTitle').textContent = translations[lang].audioTitle;
             document.getElementById('videoTitle').textContent = translations[lang].videoTitle;
-            document.getElementById('codeTitle').textContent = translations[lang].codeTitle;
-            document.getElementById('frameworkTitle').textContent = translations[lang].frameworkTitle;
+            document.getElementById('developmentTitle').textContent = translations[lang].developmentTitle;
+            document.getElementById('pptTitle').textContent = translations[lang].pptTitle;
         }
 
         // 检测用户浏览器语言
