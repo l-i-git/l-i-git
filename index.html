@@ -69,7 +69,7 @@ export default function UpdatedAIToolsNavigation() {
   const [language, setLanguage] = useState('zh')
 
   useEffect(() => {
-    const checkOrientation = () => {
+    const checkOrientation = () => {  
       setIsPortrait(window.innerHeight > window.innerWidth)
     }
 
@@ -102,7 +102,7 @@ export default function UpdatedAIToolsNavigation() {
         </div>
         <div className={`grid gap-x-8 gap-y-12 ${isPortrait ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-2 lg:grid-cols-3'} justify-items-center`}>
           {categories.map((category) => (
-            <div key={category.id} className="w-full max-w-xs space-y-4">  
+            <div key={category.id} className="w-full max-w-xs space-y-4">
               <h2 className={`text-2xl font-semibold ${category.color} text-center`}>
                 {language === 'zh' ? category.titleZh : category.titleEn}
               </h2>
